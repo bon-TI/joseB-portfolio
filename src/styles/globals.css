@@ -13,8 +13,14 @@
 @tailwind utilities;
 
 @layer components{
+    body {
+        @apply bg-[#e2e2e2] dark:bg-[#252525];
+    }
     .button{
         @apply text-xs font-inter px-3 py-1 font-semibold bg-transparent uppercase cursor-pointer rounded-full text-torch-200 hover:text-gray-50  hover:bg-torch-300 transition-all 
+    }
+    .project-button{
+        @apply text-xs font-inter px-4 py-2 font-semibold bg-transparent uppercase cursor-pointer rounded-full text-gray-700 hover:text-gray-50  hover:bg-torch-300 transition-all 
     }
     .theme-button{
         @apply text-xs px-3 py-1 bg-transparent uppercase cursor-pointer rounded-md bg-torch-100 text-gray-100 hover:bg-torch-300 transition-all 
@@ -29,7 +35,6 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
 }
 
 a {
