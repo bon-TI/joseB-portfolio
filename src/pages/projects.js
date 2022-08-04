@@ -1,20 +1,25 @@
 import React from 'react'
+import ProjectsContent from '../components/projects/ProjectsContent';
 
-function projects() {
+function Projects() {
   return (
-    <div>
-        <h1 className='text-torch-50 bold text-xl'>Hola mundo</h1>
-        <h1 className='text-torch-100 bold text-xl'>Hola mundo</h1>
-        <h1 className='text-torch-200 bold text-xl'>Hola mundo</h1>
-        <h1 className='text-torch-300 bold text-xl'>Hola mundo</h1>
-        <h1 className='text-torch-400 bold text-xl'>Hola mundo</h1>
-        <h1 className='text-torch-500 bold text-xl'>Hola mundo</h1>
-        <h1 className='text-torch-600 bold text-xl'>Hola mundo</h1>
-        <h1 className='text-torch-700 bold text-xl'>Hola mundo</h1>
-        <h1 className='text-torch-800 bold text-xl'>Hola mundo</h1>
-        <h1 className='text-torch-900 bold text-xl'>Hola mundo</h1>
+    <div className='w-full pt-20 flex flex-col'>
+      <div className="w-full h-10 flex justify-center">
+        <div className="text-center">
+          <h1 className="text-3xl font-bold">
+            <span className="text-torch-500">My</span>
+            <span className="text-torch-200"> Projects</span>
+          </h1>
+          <p className="py-2">
+            These are some of the projects I have done
+          </p>
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <ProjectsContent />
+      </div>
     </div>
   )
 }
 
-export default projects;
+export default Projects;
